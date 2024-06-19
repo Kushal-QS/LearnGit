@@ -1,3 +1,4 @@
+
 Initialize empty Git repository
 $ git init
 
@@ -10,3 +11,6 @@ $ git add learn.txt (for individual files)
 
 Inorder to save the history of untracked files permanently in the repository
 $ git commit -m "learn.txt is created to maintain notes"
+
+Inorder to remove the files from the stage with out commiting it :
+$ git restore --staged learn.txt
