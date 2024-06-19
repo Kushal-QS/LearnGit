@@ -1,0 +1,12 @@
+Initialize empty Git repository
+$ git init
+
+checking status of changes weather they are tracked, untracked etc...
+$ git status
+
+placing all the files whose history has not been saved in the project yet on to the stage.
+$ git add . (for all the untracked files)
+$ git add learn.txt (for individual files)
+
+Inorder to save the history of untracked files permanently in the repository
+$ git commit -m "learn.txt is created to maintain notes"
