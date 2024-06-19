@@ -29,6 +29,19 @@ $git stash
 
 use $git stash pop to get those back and $git stash clear to remove them and you cannot get them back
 
+// Git hub
+
+Inorder to connect our local repository to the online repository
+$ git remote add origin "remote repo url"
+$ git remote add origin https://github.com/Kushal-QS/LearnGit.git
+
+by convention, all the repositories ex LearnGit.git here in your account are referred as origin
+
+when you run the above command, your local folder is connected to the remote repo. Now In order to reflect the changes of local repository to remote repository, use
+$ git push origin main
+
+
+
 
 
 
