@@ -41,8 +41,37 @@ when you run the above command, your local folder is connected to the remote rep
 $ git push origin main
 
 
+To create a new branch
+$ git branch feature -> a new branch named feature is created
+$ git checkout feature -> head is moved to feature branch. all the commits happen here from now
 
 
+Inorder to cotribute to other's projects, fork other person's repositories and you shall see it in your account. now this forked repository under your account will be your origin. and from where you have fored this repository will be known as upstream.
 
+$ git clone "url of forked repository from your profile"
+$ git remote add upstream "upstream url"
+
+so when you have your own copy and when you made changes to your own copy of the original repository,
+how do you make sure that those changes are visible in the main project? we do it with pull request. first we should push changes to online repository. To our forked remote repository the new branch named "feature 405" is pushed from local repository and will be there with changes.
+
+pull request : I have a branch named "feature 405" which has changes and I want you to merge it with original repository's main branch so that every one can see the changes. here we are requesting to pull the code from our branch to original repository's main branch.
+
+One branch can open only one pull request.
+
+you need to force push when your online repository has different commits than your local repository
+
+Inorder to make sure upstream's main branch and fork's main branch are maintained, 
+Approach-1
+$ git checkout main
+$ git fetch --all --prune
+$ git reset --hard upstream/main
+
+now our local repository is in sync with the updated upstream repository. lets make our forked remote repository to be in sync with the updated upstream repository
+
+$ git push origin main
+
+Approach -2
+git pull upstream main
+git push origin main
 
 
