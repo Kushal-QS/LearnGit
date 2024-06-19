@@ -14,3 +14,22 @@ $ git commit -m "learn.txt is created to maintain notes"
 
 Inorder to remove the files from the stage with out commiting it :
 $ git restore --staged learn.txt
+
+To view the history of the repository
+$ git log
+
+To roll back to some previous version, copy the hash code of the commit you want to roll back to
+$ git reset 9d50e9b84f5b31ad572ba8a312ff6f644f562c20
+
+Now the repository is reset to a certain version. Now the removed commits are in the untracked list
+you can have them in the stash area and get them back when ever you want. you can also use it in cases like you have made some progress but you dont want to have it in the repo history so add them to staging area and insted of commiting it, stash them. they are saved in stashing area.
+
+$git add .
+$git stash
+
+use $git stash pop to get those back and $git stash clear to remove them and you cannot get them back
+
+
+
+
+
