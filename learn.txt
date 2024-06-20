@@ -74,4 +74,9 @@ Approach -2
 git pull upstream main
 git push origin main
 
+//Merging
+Inorder to merge a branch to another branch, we have to be on the branch that we want to merge into. so if we want to merge into main branch, we have to checkout to main branch.
+
+watch the turtorial here : https://www.youtube.com/watch?v=XX-Kct0PfFc&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=9
+
 
